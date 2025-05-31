@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c0ebbd;
+            color: #333;
+            padding: 20px;
+        }
+
+        .profile-container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #5547b0;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .links a {
+            margin: 0 10px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .portfolio {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #5547b0;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #4436a0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="https://imgs.search.brave.com/mqE7a4wvHQx_nwf9X5GZV73GOwR0LScr1J1QodgIly8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNm9sQ2pI/VmFjdnJ1R0ZPUEdV/MzR3R1drdlZWcHBQ/ZUxKMENHeUcxVW5z/QS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/YldjdS9abkpsWlhC/cGF5NWpiMjB2L2NI/SmxiV2wxYlMxMlpX/TjAvYjNJdlkzVjBa/UzFqWVhKMC9iMjl1/TFdoaFkydGxjaTFq/L2VXSmxjaTFqY21s/dFpTMTIvWldOMGIz/SXRhV3hzZFhOMC9j/bUYwYVc5dVh6YzNN/emd4L05TMHhNakF1/YW5CblAzTmwvYlhR/OVlXbHpYMmg1WW5K/cC9aQQ.jpeg" alt="Student Photo">
+
+        <h1>Chandana C Shetty</h1>
+
+        <h2>Personal Details</h2>
+        <p><strong>Student USN:</strong> 1DA23CS034</p>
+        <p><strong>Branch:</strong> Computer Science</p>
+        <p><strong>Section:</strong> B</p>
+        <p><strong>Email:</strong> cshetty@gmail.com</p>
+        <p>I am CSE student who is keen on learning in the cybersecurity.</p>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Reading Tech Blogs</li>
+           
+            <li>Listening to Music</li>
+            <li>Playing Sports</li>
+            <li>Sketching</li>
+        </ul>
+
+        <h2>Links</h2>
+        <p>You can connect me here 🤗.</p>
+        <div class="links">
+            <nav>
+                <a href="https://github.com/Chandana-0205" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/chandana-c-shetty-358595312/" target="_blank">LinkedIn</a>
+                <a href="#portfolio">Portfolio</a>
+            </nav>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+            <li><strong>Personal Website:</strong> A responsive site built using HTML, CSS.</li>
+            <li><strong>To-Do App:</strong> A task tracker using basic JavaScript DOM manipulation.</li>
+            <li><strong>Weather App:</strong> Fetches live weather data using an API.</li>
+            <li><strong>Mini E-Commerce Page:</strong> A simple webpage for pet online store.</li>
+        </ul>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject">
+            </p>
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
+
